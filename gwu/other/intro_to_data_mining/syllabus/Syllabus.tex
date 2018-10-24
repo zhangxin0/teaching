@@ -1,0 +1,277 @@
+\documentclass[pdftex,11pt]{artikel3}
+
+\usepackage[dvips,letterpaper,margin=1in]{geometry}
+\usepackage[svgnames]{xcolor}
+\usepackage{hyperref}
+\usepackage{tabularx}
+
+\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+
+\title{\centering Introduction to Data Mining \\ DATS 6103 - 10, Summer 2018
+}
+\author{}
+\date{}
+
+\begin{document}
+\maketitle
+
+\vspace{-10mm}
+\begin{tiny}
+\hfill \date{}
+\end{tiny}
+\vspace{-10mm}
+
+\section{Meeting Time and Location}
+\begin{itemize}
+\item Meeting time: Tuesday / Thursday, 5:10 PM - 7:40 PM
+\item Location: Corcoran Hall 103
+\end{itemize}
+
+\section{Instructor}
+\begin{itemize}
+\item Name: Yuxiao Huang
+\item Email: \href{mailto:yuxiaohuang@email.gwu.edu}{yuxiaohuang@gwu.edu}
+\item Office address: 2100 Pennsylvania Avenue, Suite 200, Room 281
+\item Office hours: Monday - Thursday, 4:00 PM - 5:00 PM
+\item Note: If you cannot make my scheduled office hours and need to talk outside of class, please send email to set up an appointment. I will try to respond within 24 hours. Please be aware that I may be unable to answer emails about Homework and Final project before the deadline, if they are received less than 24 hours before they are due.
+\end{itemize}
+
+\section{Teaching Assistant}
+\begin{itemize}
+\item Name: Deepak Aggarwal
+\item Email: \href{mailto:deepakagarwal@email.gwu.edu}{deepakagarwal@email.gwu.edu} 
+\item Office address: Monday 7:40 PM - 8:40 PM, Corcoran Hall 204; other times, 2100 Pennsylvania Avenue, Suite 200
+\item Office hours: Monday 4:00 PM - 5:00 PM, 7:40 PM - 8:40 PM, Tuesday 4:00 PM - 5:00 PM, Thursday 4:00 PM - 5:00 PM
+\end{itemize}
+
+\section{Course Description}
+\begin{itemize}
+\item This course is an introduction of data mining using Python
+\item The course has three major parts: Python language (3.5 classes), data visualization and preprocessing (2 classes), and linear models (4 classes)
+\item Although lectures will include some theory, the emphasis will be on coding
+\end{itemize}
+
+\section{Learning Outcomes}
+As a result of completing this course, students will be able to:
+\begin{itemize}
+\item use Python to visualize and preprocess data
+\item use Python to implement linear models and apply the models to  solve real-world problems
+\item write technical report and present the results
+\item work both individually and as a team 
+\end{itemize}
+
+\section{Textbook}
+The following book is recommended but not required:
+
+\begin{itemize}
+\item \href{https://sebastianraschka.com/books.html}{Raschka S. and  Mirjalili V. (2017). \textit{Python Machine Learning. 2nd Edition.}}
+\end{itemize}
+
+\section{Average Minimum Amount of Out-Of-Class or Independent Learning Expected Per Week}
+\begin{itemize}
+\item Going over key concepts and doing lots of problems, beyond what is assigned in class, is integral for success in this course
+\item You should spend at least 10 hours of out-of-class or independent learning per week 
+\end{itemize}
+ 
+\section{Homework}
+\begin{itemize}
+\item There will be 6 Homework assignments, which will be solely based on Python programming
+\item Homework \textcolor{red}{must} be completed individually
+\end{itemize}
+
+\section{Final Project}
+The Final project is a good opportunity for you to apply data mining methods to complex, real-world problems. It will be completed by teams of 1, 2, or 3 students. Each team can choose a problem in the domain of their interest.
+
+\subsection{Deliverables}
+\begin{itemize}
+\item Project proposal
+\item Code and a readme file (describing how to run the code)
+\item Final report
+\end{itemize}
+
+\subsection{Proposal}
+The project proposal is 1-page maximum. It should include:
+\begin{itemize}
+\item The title of the project
+\item The problem definition and motivation
+\item The proposed method, language, and package you will need for the implementation
+\item The link to the data
+\item The responsibility of each team member
+\end{itemize}
+
+\subsection{Data and Code}
+\begin{itemize}
+\item Each team \textcolor{red}{must} use real-world data. Simulated data are not allowed. Please talk to the instructor if you are not sure about the nature of the data. There are many publicly available datasets. For example, UCI and Kaggle provide repositories that could be useful for you project:
+	\begin{itemize}
+	\item UCI: \url{http://www.ics.uci.edu/~mlearn/MLRepository.html}
+	\item Kaggle: \url{https://www.kaggle.com/datasets}
+	\end{itemize}
+\item Each team must submit the code with a readme file describing how to run the code
+\item For full consideration, experiments must be reproducible given the (link to the) data, code, and the readme file
+\end{itemize}
+
+\subsection{Final Report}
+The Final report is 3-4 pages. It must include:
+\begin{itemize}
+\item Title
+\item Introduction (including problem definition and motivation)
+\item Proposed method and the idea behind it (e.g. why should the method work)
+\item Experimental results and analysis (e.g. why the results look like this)
+\item Conclusions
+\end{itemize}
+
+\subsection{Presentation}
+\begin{itemize}
+\item A presentation should be no longer than 10 minutes, and will be followed by a Q \& A session (no longer than 2 minutes)
+\item All team members should present
+\end{itemize}
+
+\section{Submission}
+\begin{itemize}
+\item Homework \textcolor{red}{must} be completed by individual students. Final project will be completed by groups of 1, 2, or 3 students. Both the Homework and Final project should be submitted to Blackboard.
+\item Homework and Final project will be due for submission through Blackboard by Tuesday or Thursday
+at 11:59 PM (Eastern time). \textcolor{red}{Submission will no longer be accepted after the deadline, and will receive a grade of 0.}
+\end{itemize}
+
+\section{Grading Scheme}
+\begin{itemize}
+\item 42\% Homework (6)
+\item 28\% Final project (1) 
+	\begin{itemize}
+	\item 5\% Proposal
+	\item 9\% Data and Code
+	\item 9\% Final report (3-4 pages)
+	\item 5\% Presentation (10 minutes)
+	\end{itemize}
+\item 30\% Exams
+	\begin{itemize}
+	\item 10\% Midterm Examination
+	\item 20\% Final Examination
+	\end{itemize}
+\end{itemize}
+
+\section{Grade Appeals}
+\begin{itemize}
+\item A grade becomes permanent one week after you receive the grade
+\item Grade appeals and questions must be raised in writing (email) within one week after the day on which the grade was received
+\end{itemize}
+
+\section{Letter Grade Distribution}
+\begin{tabular}{ l l}
+$[93, 100]$ & A\\
+$\left[90, 93 \right)$  & A-\\
+$\left(87, 90 \right)$  & B+\\
+$\left[83, 87 \right]$  & B\\
+$\left[80, 83 \right)$  & B-\\
+$\left(77, 80 \right)$ & C+\\ 
+$\left[73, 77 \right]$ & C\\
+$\left[70, 73 \right)$ & C-\\
+$<$70    & F\\  
+\end{tabular}
+%\begin{tabular}{ l l | l l }
+%\textgreater= 93.00 & A & 73.00 - 76.99 & C \\
+%90.00 - 92.99 & A-  & 70.00 - 72.99 & C- \\
+%87.00 - 89.99 & B+  & 67.00 - 69.99 & D+ \\
+%83.00 - 86.99 & B  & 63.00 - 66.99 & D \\
+%80.00 - 82.99 & B-  & 60.00 - 62.99 & D- \\
+%77.00 - 79.99 & C+  & \textless= 59.99 & F \\
+%\end{tabular} \\
+
+\section{University Policies}
+
+\subsection{University Policy on Observance of Religious Holidays}
+In accordance with University policy, students should notify faculty during the first week of the semester of their intention to be absent from class on their day(s) of religious observance. For details and policy, see: \url{https://students.gwu.edu/accommodations-religious-holidays}
+%\begin{itemize}
+%\item Students should notify faculty during the first week of the semester of their
+%intention to be absent from class on their day(s) of religious observance.
+%\item Faculty should extend to these students the courtesy of absence without penalty
+%on such occasions, including permission to make up examinations.
+%\item Faculty who intend to observe a religious holiday should arrange at the beginning of the semester to reschedule missed classes or to make other provisions for their course related activities.
+%\end{itemize}
+
+\subsection{Academic Integrity Code}
+Academic dishonesty is defined as cheating of any kind, including misrepresenting one's own work, taking credit for the work of others without crediting them and without appropriate authorization, and the fabrication of information. For details and complete code, see: \url{https://studentconduct.gwu.edu/code-academic-integrity}
+
+\subsection{Safety and Security}
+In the case of an emergency, if at all possible, the class should shelter in place. If the building that the class is in  is affected, follow the evacuation procedures for the building. After evacuation, seek shelter at a predetermined rendezvous location.
+
+\section{Support for Students Outside the Classroom}
+
+\subsection{Disability Support Services (DSS)}
+Any student who may need an accommodation based on the potential impact of a disability should contact the Disability Support Services office at 202-994-8250 in the Rome Hall, Suite 102, to establish eligibility and to coordinate reasonable accommodations. For additional information see: \url{https://disabilitysupport.gwu.edu/}
+
+%\section{Disability Support Services (DSS)}
+%\begin{itemize}
+%\item Any student who may need an accommodation based on the potential impact of a disability should contact the Disability Support Services office at 202-994-8250 in the Rome Hall, Suite 102, to establish eligibility and to coordinate reasonable accommodations.
+%\item For additional information please refer to: \url{https://disabilitysupport.gwu.edu}
+%\end{itemize}
+
+\subsection{Mental Health Services 202-994-5300}
+The University's Mental Health Services offers 24/7 assistance and referral to address students' personal, social, career, and study skills problems. Services for students include: crisis and emergency mental health consultations confidential assessment, counseling services (individual and small group), and referrals. For additional information see: \url{https://counselingcenter.gwu.edu/}
+
+%\section{University Counseling Center (UCC)}
+%\begin{itemize}
+%\item The University Counseling Center (UCC phone: 202-994-5300) offers 24/7 assistance and referral to
+%address students' personal, social, career, and study skills problems. Services for students include:
+%\begin{itemize}
+%\item crisis and emergency mental health consultations
+%\item confidential assessment, counseling services (individual and small group), and
+%referrals
+%\end{itemize}
+%\item For additional information please refer to: \url{https://healthcenter.gwu.edu/mental-health}
+%\end{itemize}
+
+\newpage
+
+% Course Outline
+\section{Tentative Schedule}
+\begin{tabular}{| L{1cm} | L{7.8cm} | L{3.3cm} | L{3cm} |}
+\hline
+\textbf{Class Date} & \centering{\textbf{Topic}} & \textbf{Assignment Given} & \textbf{Assignment Due} \\
+\hline
+05/22 & Python: jupyter notebook, python syntax, data type, and control flow &  & \\
+\hline
+05/24 & Python: numpy, scipy, and function & Homework 1 Given & \\
+\hline
+05/29 & Python: object orient programming &  & Homework 1 Due \\
+\hline
+05/31 & Python: pandas and matplotlib
+
+Data visualization
+& Homework 2 Given &  \\
+\hline
+06/05 & Midterm
+
+Data preprocessing
+ &  & Homework 2 Due\\
+\hline
+06/07 & Data preprocessing (continued) & Homework 3 Given &  \\
+\hline
+06/12 & Linear model: linear regression & Homework 4 Given & Homework 3 Due \\
+\hline
+06/14 & Linear model: logistic regression & Homework 5 Given & Homework 4 Due \\
+\hline
+06/19 & Linear model: perception \& Adaline & Homework 6 Given & Homework 5 Due \\
+\hline
+06/21 & Case study (putting everything together) &  & Homework 6 Due
+\textcolor{red}{Final project Code and Report Due}\\
+\hline
+06/26 & Presentation & & \\
+\hline
+06/28 & Final exam
+
+Preparation for Machine Learning I
+ &  &  \\
+\hline
+\end{tabular}
+
+\vspace{5mm}
+
+%\textcolor{red}{Note}: In accordance with university policy, the final exam will be given during the final exam period and not the last week of the semester. For details and complete policy, see: \url{https://provost.gwu.edu/administration-final-examinations-during-examination-period}
+
+\end{document}
+
+
+\end{document}
